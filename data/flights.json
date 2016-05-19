@@ -1,0 +1,20 @@
+[
+  {
+    "id": 12,
+    "date": "2016-05-19T12:00",
+    "from": "Vienna",
+    "to": "London"
+  },
+  {
+    "id": 13,
+    "date": "2016-05-19T13:00",
+    "from": "Vienna",
+    "to": "London"
+  },
+  {
+    "id": 14,
+    "date": "2016-05-20T13:00",
+    "from": "Vienna",
+    "to": "London"
+  }
+]

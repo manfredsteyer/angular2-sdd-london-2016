@@ -1,0 +1,37 @@
+<h1>Search for Flights!</h1>
+
+<div class="form-group">
+    <label>From:</label>
+    <input class="form-control" [(ngModel)]="from">    
+</div>
+
+<div class="form-group">
+    <label>To:</label>
+    <input class="form-control" [(ngModel)]="to">    
+</div>
+
+<div class="form-group">
+    <button class="btn btn-default" (click)="search()">Search!</button>
+</div>
+
+<div *ngFor="let flight of flights" class="col-sm-4">
+    <flight-card 
+        [flight]="flight" 
+        [selectedFlight]="selectedFlight"
+        (selectedFlightChange)="selectedFlight = $event">
+    </flight-card>
+</div>
+
+<!--
+<table *ngIf="flights.length > 0" class="table table-striped">
+    
+    <tr *ngFor="let flight of flights" [class.active]="flight === selectedFlight">
+        <td>{{flight.id}}</td>
+        <td>{{flight.date}}</td>
+        <td>{{flight.from}}</td>
+        <td>{{flight.to}}</td>
+        <td><a (click)="select(flight)">Select</a></td>
+    </tr>
+    
+</table>
+-->
